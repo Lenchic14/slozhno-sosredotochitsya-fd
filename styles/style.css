@@ -10,10 +10,11 @@
   background-attachment: fixed;
   background-position: center;
   transition-duration: var(--transition-duration);
-  font-family: var(--font-family);
+  font-family: var(--font-family, "IBM Plex Mono", monospace);
   font-size: 18px;
   font-weight: 400;
 }
+
 /*Хедер*/
 
 .header {
@@ -87,36 +88,25 @@
 
 /*decor*/
 .decor {
+  display: none;
   position: absolute;
-  right: 20px;
+  right: 35px;
   top: 20px;
+  font-family: "IBM Plex Mono", monospace;
 }
+
 
 .text-decor {
   background-color: var(--accent-color, #ff0070);
   color: var(--subtitle-color, #000028);
 }
 
-.decor::before {
-  position: absolute;
-  content: "REc";
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--accent-color, #ff0070);
-  font-weight: 400;
-  line-height: 18px;
-  right: 28px;
-  font-style: normal;
-  font-size: 18px;
-  top: 3px;
-  font-family: var(--font-family, "IBM Plex Mono", monospace);
-}
 
 .decor::after {
   position: absolute;
   content: "";
   top: 8px;
-  right: 9px;
+  right: -10px;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
   background-color: var(--accent-color, #ff0070);
@@ -239,14 +229,6 @@
 
 .concentrate-better {
   margin-block-end: 80px;
-}
-
-.focus__container .article {
-  margin-block-end: 20px;
-}
-
-.focus {
-  margin-block-end: 63px;
 }
 
 .section:last-of-type .section__image {
@@ -380,6 +362,13 @@
     /*margin-block-end: -10px;*/
   }
 
+  .decor {
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+  }
+
   .decorated-zone::after {
     top: 10px;
     right: 10px;
@@ -390,23 +379,14 @@
     left: 10px;
   }
 
-  .decor::before {
-    top: -6px;
-    right: 18px;
-  }
-
   .decor::after {
-    top: -2px;
-    right: 1px;
+    top: 7px;
+    right: -15x;
   }
 
   .content__section {
     grid-template-columns: auto;
     gap: 20px;
-  }
-
-  .focus {
-    margin-block-end: 32px;
   }
 
   .concentrate {
@@ -484,6 +464,7 @@
     justify-self: end;
     margin-block-start: 167px;
   }
+
   .header__theme-menu-list {
     flex-direction: column;
     gap: 13px;
@@ -534,6 +515,7 @@
   .section:nth-of-type(3) .section__article-list {
     width: 64%;
   }
+
   .section:nth-of-type(2) .section__article-item {
     flex: 1 0 auto;
     width: 100%;
@@ -542,12 +524,12 @@
 
 /*Футер*/
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >=768px) {
   .footer {
     margin-block-start: 60px;
   }
 
-  @media (width < 768px) and (width >= 375px) {
+  @media (width < 768px) and (width >=375px) {
     .footer__title {
       font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     }
