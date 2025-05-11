@@ -1,8 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-
   background-color: var(--bg-color, #000028);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
@@ -198,6 +196,7 @@
 .section__article-text-link:focus-visible {
   outline: 1px solid currentColor;
 }
+
 
 .content__section {
   display: grid;
