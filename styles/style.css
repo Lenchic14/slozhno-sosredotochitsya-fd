@@ -99,7 +99,6 @@
   color: var(--subtitle-color, #000028);
 }
 
-
 .decor::after {
   position: absolute;
   content: "";
@@ -146,7 +145,7 @@
   line-height: 23px;
 }
 
-.content__title {
+.section__title {
   color: var(--section-title-color, #ff0070);
 }
 
@@ -163,7 +162,7 @@
   gap: 10px;
 }
 
-.article__list {
+.section-advices__list {
   display: grid;
   gap: 20px;
 }
@@ -176,7 +175,7 @@
   font-family: var(--font-family, "IBM Plex Mono", monospace);
 }
 
-.article__list-item .section__article__title {
+.section-advices__item .section__article__title {
   font-weight: 400;
 }
 
@@ -198,35 +197,28 @@
 }
 
 
-.content__section {
+.section {
   display: grid;
   gap: 10px;
   grid-template-columns: minmax(236px, 1fr) 2fr;
 }
 
-.concentrate {
+.section-causes {
   gap: 20px;
   margin-block-end: 80px;
   display: grid;
   grid-template-columns: auto;
 }
 
-.concentrate .content__title {
+.section-causes .section__title {
   max-width: 315px;
 }
 
-.concentrate__container {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: start;
-}
-
-.concentrate-better__title {
+.section-advices__subtitle {
   margin-block-end: 20px;
 }
 
-.concentrate-better {
+.section-advices {
   margin-block-end: 80px;
 }
 
@@ -383,20 +375,17 @@
     right: -15x;
   }
 
-  .content__section {
+  .section {
     grid-template-columns: auto;
     gap: 20px;
   }
 
-  .concentrate {
+  .section-causes {
     margin-block-end: 55px;
   }
 
-  .concentrate__container {
-    grid-template-columns: auto;
-  }
 
-  .concentrate-better {
+  .section-advices {
     margin-block-end: 50px;
   }
 
@@ -477,22 +466,19 @@
     max-width: 364px;
   }
 
-  .concentrate {
+  .section-causes {
     grid-template-columns: auto;
     display: grid;
   }
 
-  .concentrate .content__title {
+  .section-causes .section__title {
     max-width: 236px;
   }
 
-  .content__section {
+  .section {
     gap: 20px;
   }
 
-  .concentrate__container {
-    grid-template-columns: auto;
-  }
 
   .section__title {
     width: 35%;
