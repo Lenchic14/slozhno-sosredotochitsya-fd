@@ -4,52 +4,69 @@
   переключая тему
 */
 
-.page.theme_dark {
+:root.theme-dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --heading-text: #db00ff;
-  --section-title-color: #ff0070;
-  --font-family: "IBM Plex Mono", monospace;
-  --bg-color: #000028;
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --text-color: #f1b2ce;
-  --subtitle-color: #000028;
-  --border-color: #ff0070;
-  --border-bottom: #f1b2ce;
-  --bg-image: url(../images/cover-image-dark.png);
-  --secondary-color: var(--color-purple, #ff007040);
+    --page-bg-color: var(--approximately-black);
+    --accent-color: var(--real-red);
+    --title-color:  #db00ff;
+    --header-text-bg-color: var(--real-red);
+    --header_text-color: var(--approximately-black);
+    --question-bg-color: var(--approximately-black);
+    --question-color: var(--real-red);
+    --answer-title-bg-color: var(--real-red);
+    --answer-title-color: var(--approximately-black);
+    --answer-text-bg-color: var(--approximately-black);
+    --answer-text-color: #f1b2ce;
+    --advice-title-bg-color: var(--real-red);
+    --advice-title-color: var(--approximately-black);
+    --button-color: var(--real-red);
+    --rec-color: var(--real-red);
+    --border-color-opacity: #FF007066;
+    --background-image:  url("../images/cover-image-dark.png");
+    --deco-color: var(--real-red);
 
-  .decor {
-    display: block;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --title-color: #db00ff;
-    --heading-text: #db00ff;
-    --accent-color: #ff0070;
-    --section-title-color: #ff0070;
-    --article-title-color: var(--background-color);
-    --article-text-color: var(--title-shadow);
-    --subtitle-color: #000028;
-    --link-shadow: var(--title-shadow);
-    --bg-color: #000028;
-    --border-bottom: #f1b2ce;
-    --text-color: #f1b2ce;
-    --border-color: #ff0070;
-    --section-title-color: var(--title-shadow);
-    --title-decor: var(--title-shadow);
-    --rec-color: var(--title-shadow);
-    --bg-image: url(../images/cover-image-dark.png);
-    --secondary-color: var(--color-purple, #ff007040);
-    --font-family: "IBM Plex Mono", monospace;
+    --page-bg-color: var(--approximately-black);
+    --accent-color: var(--real-red);
+    --title-color:  #db00ff;
+    --header-text-bg-color: var(--real-red);
+    --header-text-color: var(--approximately-black);
+    --question-bg-color: var(--approximately-black);
+    --question-color: var(--real-red);
+    --answer-title-bg-color: var(--real-red);
+    --answer-title-color: var(--approximately-black);
+    --answer-text-bg-color: var(--approximately-black);
+    --answer-text-color: #f1b2ce;
+    --advice-title-bg-color: var(--real-red);
+    --advice-title-color: var(--approximately-black);
+    --button-color: var(--real-red);
+    --rec-color: var(--real-red);
+    --border-color-opacity: #FF007066;
+    --border-color-opacity: #FF007066;
+    --background-image:  url("../images/cover-image-dark.png");
+    --deco-color: var(--real-red);
+  }
 
-    .decor {
-      display: block;
-    }
+  .rec_empty::before {
+    display: inline-block;
+  }
+  
+  .rec_empty::after {
+    display: inline-block;
   }
 }
+
+.theme-dark .rec_empty::before {
+  display: inline-block;
+}
+
+.theme-dark .rec_empty::after {
+  display: inline-block;
+}
+

@@ -1,4 +1,4 @@
-/* Глобальные стили для проекта */
+/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
 *,
 *::before,
@@ -35,8 +35,8 @@ picture {
 
 button,
 a {
-  line-height: inherit;
+  color: currentColor;
   font-family: inherit;
   font-size: inherit;
-  color: currentColor;
+  line-height: inherit;
 }
