@@ -157,7 +157,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 800px;
+  min-height: 1024px;
   position: relative;
   margin-top: 40px;
 }
@@ -304,7 +304,7 @@
 
 
   .footer {
-    min-height: 756px;
+    min-height: 700px;
     margin-top: 60px;
   }
 
@@ -399,7 +399,7 @@
   }
 
   .footer {
-    min-height: 785px;
+    min-height: 800px;
     margin-top: 60px;
   }
 
