@@ -41,7 +41,7 @@
 }
 
 .header__theme-menu-button {
-  padding: 4px 13px;
+  padding: 2px 13px;
   background-color: inherit;
   border: none;
   font-size: var(--regular-font-size);
