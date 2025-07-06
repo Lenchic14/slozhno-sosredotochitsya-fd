@@ -111,17 +111,21 @@
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 40px;
+  gap: 32px;
+  padding: 24px;
 }
 
-.section-why {
+
+
+.section-why .list  {
   margin-top: var(--section-child-margin);
 }
 
-.section-what {
+.section-what .list  {
   margin-top: 50px;
 }
 
-.section-how {
+.section-how .list  {
   margin-top: 50px;
 }
 
