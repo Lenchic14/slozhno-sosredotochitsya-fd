@@ -30,10 +30,10 @@
 
 }
 
-/*
-.theme-light .page  {
-  /* Вам также нужно будет написать ряд подобных селекторов 
-}*/
+.theme-light .rec_empty::before,
+.theme-light .rec_empty::after {
+  display: none;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -57,20 +57,11 @@
 
   }
 
-/*  
-  .rec_empty::before {
-    display: none;
-  }
-  
-  .rec_empty::after {
-    display: none;
-  }*/
-}
-
 .theme-light .rec_empty::before {
   display: none;
 }
 
 .theme-light .rec_empty::after {
   display: none;
+}
 }
