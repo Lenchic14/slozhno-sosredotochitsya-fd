@@ -276,7 +276,7 @@
 }
 
 /* GALLERY вариант 2 и 3 */
-@media (width >= 768px) {
+@media (min-width: 768px) {
 
   .huge_title {
     font-size: clamp(7.5rem, 0.563rem + 14.453vw, 15rem);
@@ -387,7 +387,7 @@
 }
 
 /*прям большой*/
-@media (width >= 1024px) {
+@media (min-width: 1024px) {
 
   .rec_empty {
     --rec_empty_x_pos: 40px;
