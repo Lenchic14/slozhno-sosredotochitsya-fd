@@ -276,7 +276,7 @@
 }
 
 /* GALLERY вариант 2 и 3 */
-@media (min-width: 768px) {
+@media (width <= 768px) {
 
   .huge_title {
     font-size: clamp(7.5rem, 0.563rem + 14.453vw, 15rem);
@@ -305,7 +305,7 @@
 
 
   .footer {
-    --min-height: 1024px;
+    --min-height: 668px;
   }
 
 /*  .gallery__item:nth-child(1) {*/
