@@ -157,7 +157,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 668px;
+  height: 700px;
   position: relative;
   margin-top: 40px;
 }
@@ -181,7 +181,6 @@
 }
 
 .footer_title {
- /* height: max(100vh, var(--min-height));*/
   height: 100%;
   display: flex;
   align-items: center;
@@ -305,7 +304,7 @@
 
 
   .footer {
-    --min-height: 1024px;
+    --min-height: 568px;
     margin-top: 60px;
   }
 
@@ -400,7 +399,7 @@
   }
 
   .footer {
-    --min-height: 1024px;
+    --min-height: 768px;
     margin-top: 60px;
   }
 
