@@ -130,7 +130,7 @@
 }
 
 .gallery_section {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 /* GALLERY вариант mobile */
@@ -154,6 +154,9 @@
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: max(100vh, var(--min-height));
   position: relative;
 }
