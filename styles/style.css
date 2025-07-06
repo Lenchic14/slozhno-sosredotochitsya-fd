@@ -9,7 +9,7 @@
   background-color: var(--page-bg-color);
   background-attachment: fixed;
   background-image: var(--background-image);
-  background-size: cover;
+  background-position: center;
 }
 
 .header {
@@ -41,7 +41,7 @@
 }
 
 .header__theme-menu-button {
-  padding: 4px 13px;
+  padding: 2px 13px;
   background-color: inherit;
   border: none;
   font-size: var(--regular-font-size);
@@ -112,7 +112,7 @@
   margin-top: 40px;
 }
 
-.section_why: {
+.section_why {
   margin-top: var(--section-child-margin);
 }
 
@@ -154,10 +154,13 @@
 }
 
 .footer {
-  height: max(100vh, var(--min-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 664px;
   position: relative;
+  margin-top: 35px;
 }
-
 
 /* шрифты */
 
@@ -178,11 +181,11 @@
 }
 
 .footer_title {
- /* height: max(100vh, var(--min-height));*/
   height: 100%;
   display: flex;
   align-items: center;
-  margin-top: 32px;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .answer_title {
@@ -273,7 +276,7 @@
 }
 
 /* GALLERY вариант 2 и 3 */
-@media (width >= 768px) {
+@media (min-width: 768px) {
 
   .huge_title {
     font-size: clamp(7.5rem, 0.563rem + 14.453vw, 15rem);
@@ -302,7 +305,8 @@
 
 
   .footer {
-    --min-height: 1024px;
+    min-height: 1023px;
+    margin-top: 60px;
   }
 
 /*  .gallery__item:nth-child(1) {*/
@@ -369,7 +373,7 @@
   }
 
   .gallery_section {
-    margin-top: 78px;
+    margin-top: 80px;
   }
 
   .picture_question {
@@ -379,12 +383,11 @@
 
   .footer_title {
     justify-content: center;
-    margin-top: 62px;
   }
 }
 
 /*прям большой*/
-@media (width >= 1024px) {
+@media (min-width: 1024px) {
 
   .rec_empty {
     --rec_empty_x_pos: 40px;
@@ -396,8 +399,12 @@
   }
 
   .footer {
-    --min-height: 768px;
-    margin-top: 50px;
+    min-height: 766px;
+    margin-top: 60px;
+  }
+
+  .footer_title {
+    justify-content: center;
   }
 
   .huge_title {
@@ -478,21 +485,8 @@
     gap: 10px;
   }
 
-  .gallery {
-/*    margin-top: 20px;
-    row-gap: 10px;
-    column-gap: 20px;*/
+  .gallery_section {
+    margin-top: 80px;
   }
-
-  /*
-  .footer {
-    margin-top: 10px;
-  }*/
-
-  .footer_title {
- /*   margin-top: 50px;*/
-  }
-
-
 
 }
