@@ -166,7 +166,7 @@
 
 .question {
   font-size: var(--regular-font-size);
-  line-height: 1.3;
+  line-height: 1.4;
   width: 100%;
   color: var(--question-color);
 }
