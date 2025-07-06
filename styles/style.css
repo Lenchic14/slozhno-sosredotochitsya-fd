@@ -130,7 +130,7 @@
 }
 
 .gallery_section {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 /* GALLERY вариант mobile */
@@ -185,7 +185,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  margin-top: 0px;
+  margin-top: 32px;
 }
 
 .answer_title {
@@ -276,7 +276,7 @@
 }
 
 /* GALLERY вариант 2 и 3 */
-@media (width <= 768px) {
+@media (width >= 768px) {
 
   .huge_title {
     font-size: clamp(7.5rem, 0.563rem + 14.453vw, 15rem);
@@ -305,7 +305,7 @@
 
 
   .footer {
-    --min-height: 668px;
+    --min-height: 1024px;
   }
 
 /*  .gallery__item:nth-child(1) {*/
