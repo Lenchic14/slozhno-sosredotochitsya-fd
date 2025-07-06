@@ -159,8 +159,8 @@
   align-items: center;
   height: max(100vh, var(--min-height));
   position: relative;
+  margin-top: 40px;
 }
-
 
 /* шрифты */
 
@@ -306,6 +306,7 @@
 
   .footer {
     --min-height: 1024px;
+    margin-top: 60px;
   }
 
 /*  .gallery__item:nth-child(1) {*/
@@ -400,7 +401,7 @@
 
   .footer {
     --min-height: 768px;
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .huge_title {
