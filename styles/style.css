@@ -157,7 +157,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 668px;
+  min-height: 665px;
   position: relative;
   margin-top: 40px;
 }
@@ -381,7 +381,7 @@
 
   .footer_title {
     justify-content: center;
-    margin-top: 62px;
+    margin-top: 50px;
   }
 }
 
@@ -400,6 +400,10 @@
   .footer {
     min-height: 766px;
     margin-top: 60px;
+  }
+
+  .footer_title {
+    justify-content: center;
   }
 
   .huge_title {
