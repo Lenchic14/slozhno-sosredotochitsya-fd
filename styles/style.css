@@ -154,21 +154,12 @@
 }
 
 .footer {
-  min-block-size: 100vh;
-  padding: 20px;
-  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-.footer__title {
-  text-shadow: 4px 4px 0 var(--accent-color);
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
-  color: var(--title-color);
-  font-weight: 700;
-  line-height: 82.5%;
-  
+  align-items: center;
+  min-height: 664px;
+  position: relative;
+  margin-top: 35px;
 }
 
 /* шрифты */
@@ -187,6 +178,13 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   color: var(--title-color);
   margin-left: var(--header-margin-left);
+}
+
+.footer_title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .answer_title {
@@ -306,9 +304,8 @@
 
 
   .footer {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    min-height: 1023px;
+    margin-top: 60px;
   }
 
 /*  .gallery__item:nth-child(1) {*/
@@ -382,6 +379,10 @@
     grid-column: 1 / 4;
     margin-bottom: 0;
   }
+
+  .footer_title {
+    justify-content: center;
+  }
 }
 
 /*прям большой*/
@@ -397,13 +398,12 @@
   }
 
   .footer {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-} 
+    min-height: 766px;
+    margin-top: 60px;
+  }
 
-.footer__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  .footer_title {
+    justify-content: center;
   }
 
   .huge_title {
