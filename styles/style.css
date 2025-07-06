@@ -157,7 +157,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: max(100vh, var(--min-height));
+  height: 667px;
   position: relative;
   margin-top: 40px;
 }
