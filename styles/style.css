@@ -157,9 +157,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 665px;
+  min-height: 660px;
   position: relative;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 /* шрифты */
@@ -381,7 +381,7 @@
 
   .footer_title {
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 
